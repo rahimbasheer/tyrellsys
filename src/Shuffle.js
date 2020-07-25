@@ -21,7 +21,7 @@ class Shuffle extends React.Component {
                 {this.props.playing_cards.map((cards,i) => (
                 <tr key={i}>
                     <td>{ i+1 }</td>
-                    <td>{ cards }</td>
+                    <td>{ cards!= "" ? cards : "Cards not available" }</td>
                 </tr>
                 ))}
                 </tbody>

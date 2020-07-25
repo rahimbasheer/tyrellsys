@@ -40,7 +40,7 @@ class Deck extends React.Component {
         self.setState({playing_cards: response.data});
     })
     .catch(function (response) {
-        //handle error
+      swal("API Request Failed", "Note: Please configure the API HOST correctly", "error");
         console.log('error')
     });
 }
